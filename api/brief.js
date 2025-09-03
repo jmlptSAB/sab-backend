@@ -1,5 +1,11 @@
 export default function handler(req, res) {
   res.status(200).json({
-    summary: "Hello Jordan 👋 your Daily Brief placeholder is live."
+    gmail: ["No urgent emails", "Stripe payment received"],
+    calendar: ["10:00 Gym session", "13:00 Lead calls"],
+    stocks: { AAPL: 231.79, APP: 476.17, SE: 185.79 },
+    business: { 
+      leads: ["Gavin", "Hoang", "Sophie"], 
+      atRisk: ["Client A"] 
+    }
   });
 }
